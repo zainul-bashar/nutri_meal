@@ -2,6 +2,7 @@ const express = require("express");
 require("dotenv").config();
 const userRoutes = require("./routes/users");
 const noteRouts = require("./routes/PersonalNote");
+const mealsRouter = require("./routes/meals");
 const PORT = process.env.SERVER_PORT;
 const session = require("express-session");
 const MongoDbSession = require("connect-mongodb-session")(session);
@@ -32,6 +33,7 @@ app.use(
 //routes
 app.use("/user", userRoutes );
 app.use("/note", noteRouts );
+app.use("/meals", mealsRouter );
 
 
 
