@@ -1,0 +1,46 @@
+/* src/components/Header.css */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #0f532d;
+  border-bottom: 1px solid #eee;
+  font-family: sans-serif;
+}
+
+.header-left {
+  display: flex;
+  flex-direction: column;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo {
+  border: 1px solid black; /* As per drawing */
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.app-name {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.tagline {
+  margin-top: 5px;
+  font-size: 0.9em;
+  color: whitesmoke;
+}
+
+.user-icon {
+  border: 1px solid black; /* As per drawing */
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-size: 0.9em;
+}
